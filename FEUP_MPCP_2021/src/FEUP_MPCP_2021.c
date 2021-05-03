@@ -4,7 +4,7 @@
 
 // work 1
 
-extern int CheckABS( int numx, int tam, int *seq);
+// extern int CheckABS( int numx, int tam, int *seq);
 
 // exercise 1 (Ficha 4 – Instruções adicionais AArch64)
 
@@ -94,7 +94,7 @@ int main(void) {
 	printf("nums bet [a,b]= %ld\n", res5);
 	*/
 
-	// exercise 3 a,b,c ...
+	// exercise 3 a,b,c,d ...
 
 	char ar[] ="RICARDO";
 
