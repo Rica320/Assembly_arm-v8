@@ -101,8 +101,8 @@ int main(void) {
 	int size = SIZE_CHARS(ar);
 	int nchar = NCHAR(ar,'R');
 
-	printf("size = %d", size );
-	printf("nchar = %d", nchar );
+	printf("size = %d\n", size );
+	printf("nchar = %d\n", nchar);
 
 
     return EXIT_SUCCESS;
