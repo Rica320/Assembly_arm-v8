@@ -11,6 +11,8 @@ S_SRCS += \
 ../src/MAX_HW.s \
 ../src/MAX_W.s \
 ../src/MIN_DW.s \
+../src/NCHAR.s \
+../src/SIZE_CHARS.s \
 ../src/SOMA_V.s 
 
 C_SRCS += \
@@ -25,6 +27,8 @@ OBJS += \
 ./src/MAX_HW.o \
 ./src/MAX_W.o \
 ./src/MIN_DW.o \
+./src/NCHAR.o \
+./src/SIZE_CHARS.o \
 ./src/SOMA_V.o 
 
 C_DEPS += \

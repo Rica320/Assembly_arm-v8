@@ -18,6 +18,12 @@ extern short MAX_HW(short *a, int n);
 extern long AVE_64(long *a, int n);
 extern long INTERVAL_64(long *ar, long a, long b, int n);
 
+// exercise 3
+
+extern int SIZE_CHARS(char a[]);
+extern int NCHAR(char a[], char n);
+
+
 int main(void) {
 
 	// Exercise/ evaluation 1
@@ -63,6 +69,7 @@ int main(void) {
 
 	// exercise 2 (Ficha 4 – Instruções adicionais AArch64)
 
+	/*
 	int dim = 7;
 	int v[] = {3, -1, 8, 0, -3, 1000,-3000};  // Para testar
 	//double db[] = {3, -1, 8, 0, -3, 1000,-3000};
@@ -85,6 +92,18 @@ int main(void) {
 	printf("máximo hword= %d\n", res3);
 	printf("máximo lword= %ld\n", res4);
 	printf("nums bet [a,b]= %ld\n", res5);
+	*/
+
+	// exercise 3
+
+	char ar[] ="RICARDO";
+
+	int size = SIZE_CHARS(ar);
+	int nchar = NCHAR(ar,'R');
+
+	printf("size = %d", size );
+	printf("nchar = %d", nchar );
+
 
     return EXIT_SUCCESS;
 
