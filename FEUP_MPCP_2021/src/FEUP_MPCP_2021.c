@@ -94,7 +94,7 @@ int main(void) {
 	printf("nums bet [a,b]= %ld\n", res5);
 	*/
 
-	// exercise 3
+	// exercise 3 a,b,...
 
 	char ar[] ="RICARDO";
 
