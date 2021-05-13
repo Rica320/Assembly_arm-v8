@@ -22,6 +22,13 @@ extern long INTERVAL_64(long *ar, long a, long b, int n);
 
 extern int SIZE_CHARS(char a[]);
 extern int NCHAR(char a[], char n);
+//extern unsigned int nVogal(char a[]);
+
+
+//work 2
+
+extern unsigned int SelectedUpperCase(char *seq_B, char *seq_A);
+
 
 
 int main(void) {
@@ -96,13 +103,30 @@ int main(void) {
 
 	// exercise 3 a,b,c,d ...
 
+
+
 	char ar[] ="RICARDO";
 
 	int size = SIZE_CHARS(ar);
 	int nchar = NCHAR(ar,'R');
+	//int nvogal = nVogal(ar);
 
 	printf("size = %d\n", size );
 	printf("nchar = %d\n", nchar);
+	//printf("nvogal = %d\n", nvogal);
+
+
+
+	// work 2
+
+	//char seq_A[] = "Esta frase deveráy ter alguns dos seus carateres alterados para maiúscula!";
+	//char seq_B[] = "afuily";
+
+	//unsigned int res = SelectedUpperCase(seq_B, seq_A);
+
+	//printf("Foram modificados %d carateres de seq_A. A sequência A é agora:\n", res);
+    //printf("%s\n", seq_A);
+
 
 
     return EXIT_SUCCESS;
