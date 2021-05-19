@@ -7,13 +7,16 @@ S_SRCS += \
 ../src/AVE_64.s \
 ../src/ContPar.s \
 ../src/INTERVAL_64.s \
+../src/InternProduct.s \
 ../src/MAX_HW.s \
 ../src/MAX_W.s \
 ../src/MIN_DW.s \
 ../src/NCHAR.s \
+../src/OpMat.s \
 ../src/SIZE_CHARS.s \
 ../src/SOMA_V.s \
 ../src/nVogal.s \
+../src/ocorr.s \
 ../src/selecteduppercase_up202007962_1MIEIC04.s 
 
 C_SRCS += \
@@ -24,13 +27,16 @@ OBJS += \
 ./src/ContPar.o \
 ./src/FEUP_MPCP_2021.o \
 ./src/INTERVAL_64.o \
+./src/InternProduct.o \
 ./src/MAX_HW.o \
 ./src/MAX_W.o \
 ./src/MIN_DW.o \
 ./src/NCHAR.o \
+./src/OpMat.o \
 ./src/SIZE_CHARS.o \
 ./src/SOMA_V.o \
 ./src/nVogal.o \
+./src/ocorr.o \
 ./src/selecteduppercase_up202007962_1MIEIC04.o 
 
 C_DEPS += \

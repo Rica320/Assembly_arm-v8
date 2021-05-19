@@ -29,6 +29,14 @@ extern int NCHAR(char a[], char n);
 
 extern unsigned int SelectedUpperCase(char *seq_B, char *seq_A);
 
+// exercise 11 e)
+
+extern unsigned int InternProduct(int *seq_a, unsigned int dim, int *seq_b );
+
+// work 3
+
+extern int OpMat(char nc, char nl, unsigned char *v, unsigned char *o);
+
 
 
 int main(void) {
@@ -104,7 +112,7 @@ int main(void) {
 	// exercise 3 a,b,c,d ...
 
 
-
+	/*
 	char ar[] ="RICARDO";
 
 	int size = SIZE_CHARS(ar);
@@ -114,7 +122,7 @@ int main(void) {
 	printf("size = %d\n", size );
 	printf("nchar = %d\n", nchar);
 	//printf("nvogal = %d\n", nvogal);
-
+	*/
 
 
 	// work 2
@@ -126,6 +134,42 @@ int main(void) {
 
 	//printf("Foram modificados %d carateres de seq_A. A sequência A é agora:\n", res);
     //printf("%s\n", seq_A);
+
+	// exercise 11 e)
+
+	/*
+	int a[] = {1,4,2};
+	int b[] = {2,-1,2147483646};
+	int dim = 3;
+	int res;
+	res = InternProduct(a,3,b);
+
+	printf("InternPro. = %d ", res);
+	*/
+
+	// work 3
+
+	unsigned char ncol = 4;  // Nº colunas da matriz
+	  unsigned char nlin = 3;  // Nº linhas da matriz
+	  unsigned char mat[] = { 29, 127,  11, 255,
+	                         100,   5, 200,   0,
+	                           1,  29,   0, 128 };
+	  unsigned char ops[] = {'L', 1, 33, 'C', 2, 99, 'X', 'B', 'C', 0, 111};   // Exemplo a)
+	  unsigned char ops3[] = {'B','O', 255, 'X'};   // Exemplo a)
+	  unsigned char ops2[]= {'L', 1, 33, 'C', 2, 99, 'O', 33, 'B', 'C', 0, 123, 'O', 255, 'P', 2, 0, 26, 'X'};   // Exemplo b)
+	  int  res;
+	  char i, j;
+
+	  res = OpMat(ncol, nlin, mat, ops2);
+	  printf("Retorno de OpMat = %d\n", res);
+	  for (i=0; i<nlin; i++)
+	  {
+	      for (j=0; j<ncol; j++)
+	          printf("%*d", 4, mat[i*ncol+j]);
+	      printf("\n");
+	  }
+	  printf("\n");
+
 
 
 
