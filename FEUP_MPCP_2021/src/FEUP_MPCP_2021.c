@@ -35,7 +35,19 @@ extern unsigned int InternProduct(int *seq_a, unsigned int dim, int *seq_b );
 
 // work 3
 
-extern int OpMat(char nc, char nl, unsigned char *v, unsigned char *o);
+extern int OpMat(char nc, char nl, unsigned char *o, unsigned char *v);
+
+// work 4
+
+extern void closestCircle(unsigned int np, float *vp, unsigned int nc, double *vc, int *id);
+
+// ex5 ficha 6
+
+double prodint(float *X, float *Y, int n);
+
+// ex6 ficha 6
+
+long int conta_intervalo(float *V, long int n, float a, float b);
 
 
 
@@ -149,6 +161,7 @@ int main(void) {
 
 	// work 3
 
+	/*
 	unsigned char ncol = 4;  // Nº colunas da matriz
 	  unsigned char nlin = 3;  // Nº linhas da matriz
 	  unsigned char mat[] = { 29, 127,  11, 255,
@@ -160,7 +173,7 @@ int main(void) {
 	  int  res;
 	  char i, j;
 
-	  res = OpMat(ncol, nlin, mat, ops2);
+	  res = OpMat(ncol, nlin, ops2, mat);
 	  printf("Retorno de OpMat = %d\n", res);
 	  for (i=0; i<nlin; i++)
 	  {
@@ -169,8 +182,50 @@ int main(void) {
 	      printf("\n");
 	  }
 	  printf("\n");
+	 */
 
+	// work 4
 
+	/*
+	unsigned int NP = 2;  // Nº pontos
+	  unsigned int NC = 4;  // Nº circunferências
+	  int ID[] = {-1, -1};
+	  //Exemplo 1: VP1 e VC1
+	  float VP1[] = {-1.0, 0.0, 2.7, 1.15};
+	  double VC1[]= {-4.0, -1.0, 1.0, -3.89, 5.4, 0.51, 2.0, 1.0, 1.0, 3.0, 1.21, 0.9};
+	  //Exemplo 2: VP2 e VC2
+	  float VP2[] = {-3.0, 1.0, -3.0, -1.5};
+	  double VC2[]= {0.0, -6.0, 6.0, -10.0, 0.0, 10.75, 0.0, 0.0, 5.0};
+	  int i;
+
+	  closestCircle(NP, VP1, NC, VC1, ID);
+	  printf("Exemplo 1: ID = ");
+	  for (i=0; i<NP; i++)
+	    {printf("%d ", ID[i]); ID[i]=-1;}
+	  printf("\n");
+	  closestCircle(NP, VP2, 3, VC2, ID);
+	  printf("Exemplo 2: ID = ");
+	  for (i=0; i<NP; i++)
+	    printf("%d ", ID[i]);
+	  printf("\n");
+	*/
+
+	// ex5 ficha 6
+
+	/*
+	float a[] = {1.5, 2.5};
+	float b[] = {0.0,1.0};
+	double res = prodint(a,b,2);
+	printf("Retorno = %f\n", res);
+	*/
+
+	// ex6 ficha 6
+
+	/*
+	float V[] ={2.5,2.3,3.4,6,2.6};
+	long int res = conta_intervalo(V ,5, 2.5, 3.4);
+	printf("Retorno = %d\n", res);
+	*/
 
 
     return EXIT_SUCCESS;
