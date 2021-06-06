@@ -49,7 +49,25 @@ double prodint(float *X, float *Y, int n);
 
 long int conta_intervalo(float *V, long int n, float a, float b);
 
+// work 5
 
+extern float histo(unsigned int N, unsigned char *C, unsigned char *H);
+
+// ex3
+
+long int conta_ocorr(char *V, long int n, char val);
+
+// ex 6
+
+double normV(double *ptV, long int n);
+
+// ex 3 ficha 6
+
+void calc_poly_tab(float *tab);
+
+// ex 4 ficha 6
+
+double HORNER(double x, double *coefs, int n);
 
 int main(void) {
 
@@ -227,7 +245,65 @@ int main(void) {
 	printf("Retorno = %d\n", res);
 	*/
 
+	// work5
 
-    return EXIT_SUCCESS;
+	/*
+	unsigned char H[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	  float res;
+	  int i;
+	  unsigned char C1[] = {15, 18, 5, 20, 9, 10, 1, 12, 16, 7, 14, 8, 10, 14, 14, 16};
+	  unsigned char C2[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 11, 12, 13, 14, 15, 16, 17, 18, 0, 0};
+	*/
+	    //Exemplo 1
+	  /*res = histo(16, C1, H);
+	  //printf("Exemplo 1:\n");
+	  for (i=0; i<21; i++)
+	    {printf("%d ---> %d\n", i, H[i]); H[i]=0;}
+	  printf("Média = %f\n\n", res);*/
+	    //Exemplo 2
+	  /*res = histo(32, C2, H);
+	  printf("Exemplo 2:\n");
+	  for (i=0; i<21; i++)
+	    printf("%d ---> %d\n", i, H[i]);
+	  printf("Média = %f\n\n", res);
+	 */
 
+	// ex 3
+
+	/*
+	char VFSIMDFEX3[] = "frasedeteste21sd";
+	long int NFSIMDFEX3 = 16;
+	char VALFSIMDFEX3 = 'd';
+	long int RESFSIMDFEX3 = 0;
+	RESFSIMDFEX3 = conta_ocorr(VFSIMDFEX3, NFSIMDFEX3,VALFSIMDFEX3);
+	printf("Elementos encontrados = %d\n", RESFSIMDFEX3);
+    return EXIT_SUCCESS;*/
+
+	// ex 6
+
+	/*
+	double ptVFSIMDFEX6[] = { 3.4, 5.3, -1.0, -2.1};
+	 long int NFSIMDFEX6 = 4;
+	 double RFSIMDFEX6 = 0.0;
+	 RFSIMDFEX6 = normV(ptVFSIMDFEX6,NFSIMDFEX6);
+	 printf("Norma do vector = %f\n", RFSIMDFEX6);*/
+
+	// exercise 3 ficha 6
+
+	/*
+	float p[101];
+	calc_poly_tab(p);
+
+	for (int i=0; i<101; i=i+1) {
+		printf("%f\n",p[i]);
+	}*/
+
+	// ex 4 ficha 6
+
+	double a[] = {2.0,-2.0,1.0,5.0, -0.5};
+	double res= HORNER(1.0,a,5);
+	printf("%f\n",res);
+
+
+	return EXIT_SUCCESS;
 }

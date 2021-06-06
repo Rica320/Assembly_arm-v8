@@ -6,6 +6,7 @@
 S_SRCS += \
 ../src/AVE_64.s \
 ../src/ContPar.s \
+../src/HORNER.s \
 ../src/INTERVAL_64.s \
 ../src/InternProduct.s \
 ../src/MAX_HW.s \
@@ -14,9 +15,13 @@ S_SRCS += \
 ../src/NCHAR.s \
 ../src/SIZE_CHARS.s \
 ../src/SOMA_V.s \
+../src/calc_poly_tab.s \
 ../src/checkabs_up202007962_1MIEIC04.s \
 ../src/conta_intervalo.s \
+../src/conta_ocorr.s \
+../src/histo.s \
 ../src/nVogal.s \
+../src/normV.s \
 ../src/ocorr.s \
 ../src/opmat_up202007962_1MIEIC04.s \
 ../src/prodint.s \
@@ -29,6 +34,7 @@ OBJS += \
 ./src/AVE_64.o \
 ./src/ContPar.o \
 ./src/FEUP_MPCP_2021.o \
+./src/HORNER.o \
 ./src/INTERVAL_64.o \
 ./src/InternProduct.o \
 ./src/MAX_HW.o \
@@ -37,9 +43,13 @@ OBJS += \
 ./src/NCHAR.o \
 ./src/SIZE_CHARS.o \
 ./src/SOMA_V.o \
+./src/calc_poly_tab.o \
 ./src/checkabs_up202007962_1MIEIC04.o \
 ./src/conta_intervalo.o \
+./src/conta_ocorr.o \
+./src/histo.o \
 ./src/nVogal.o \
+./src/normV.o \
 ./src/ocorr.o \
 ./src/opmat_up202007962_1MIEIC04.o \
 ./src/prodint.o \
