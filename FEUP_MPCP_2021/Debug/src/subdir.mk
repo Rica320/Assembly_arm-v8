@@ -15,6 +15,7 @@ S_SRCS += \
 ../src/NCHAR.s \
 ../src/SIZE_CHARS.s \
 ../src/SOMA_V.s \
+../src/altV.s \
 ../src/calc_poly_tab.s \
 ../src/checkabs_up202007962_1MIEIC04.s \
 ../src/conta_intervalo.s \
@@ -47,6 +48,7 @@ OBJS += \
 ./src/NCHAR.o \
 ./src/SIZE_CHARS.o \
 ./src/SOMA_V.o \
+./src/altV.o \
 ./src/calc_poly_tab.o \
 ./src/checkabs_up202007962_1MIEIC04.o \
 ./src/conta_intervalo.o \
