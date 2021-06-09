@@ -69,6 +69,19 @@ void calc_poly_tab(float *tab);
 
 double HORNER(double x, double *coefs, int n);
 
+// ex 7 ficha 6
+
+double rotF(double x);
+
+// ex 8 ficha 6
+
+double erfpos(double x);
+
+// ex 9 ficha 6
+
+double cosseno(double x);
+double func(double graus);
+
 int main(void) {
 
 	// Exercise/ evaluation 1
@@ -251,22 +264,22 @@ int main(void) {
 	unsigned char H[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	  float res;
 	  int i;
-	  unsigned char C1[] = {15, 18, 5, 20, 9, 10, 1, 12, 16, 7, 14, 8, 10, 14, 14, 16};
-	  unsigned char C2[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 11, 12, 13, 14, 15, 16, 17, 18, 0, 0};
-	*/
+	  unsigned char C1[] = {20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20};
+	  unsigned char C2[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1};
+
 	    //Exemplo 1
-	  /*res = histo(16, C1, H);
-	  //printf("Exemplo 1:\n");
+	  res = histo(240, C1, H);
+	  printf("Exemplo 1:\n");
 	  for (i=0; i<21; i++)
 	    {printf("%d ---> %d\n", i, H[i]); H[i]=0;}
-	  printf("Média = %f\n\n", res);*/
+	  printf("Média = %f\n\n", res);
 	    //Exemplo 2
-	  /*res = histo(32, C2, H);
+	  res = histo(32, C2, H);
 	  printf("Exemplo 2:\n");
 	  for (i=0; i<21; i++)
 	    printf("%d ---> %d\n", i, H[i]);
 	  printf("Média = %f\n\n", res);
-	 */
+	*/
 
 	// ex 3
 
@@ -300,9 +313,40 @@ int main(void) {
 
 	// ex 4 ficha 6
 
+	/*
 	double a[] = {2.0,-2.0,1.0,5.0, -0.5};
 	double res= HORNER(1.0,a,5);
 	printf("%f\n",res);
+	*/
+
+	// ex 7 ficha 6
+
+	/*
+	double r;
+
+	r= rotF(0.0);
+	printf("%f\n",r);
+
+	r= rotF(3.0);
+	printf("%f\n",r);
+
+	r= rotF(-5.0);
+	printf("%f\n",r);
+	*/
+
+	// ex 8 ficha 6
+
+	/*
+	double r = erfpos(0.1);
+	printf("%f\n",r);*/
+
+	// ex 9 ficha 6
+
+
+	for (double i=0; i <= 90; i=i+0.5){
+		double r = func(i);
+		printf("%f -> %f\n",i, r);
+	}
 
 
 	return EXIT_SUCCESS;

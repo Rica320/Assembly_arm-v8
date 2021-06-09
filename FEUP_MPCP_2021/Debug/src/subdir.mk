@@ -19,12 +19,16 @@ S_SRCS += \
 ../src/checkabs_up202007962_1MIEIC04.s \
 ../src/conta_intervalo.s \
 ../src/conta_ocorr.s \
+../src/cosseno.s \
+../src/erfpos.s \
+../src/func.s \
 ../src/histo.s \
 ../src/nVogal.s \
 ../src/normV.s \
 ../src/ocorr.s \
 ../src/opmat_up202007962_1MIEIC04.s \
 ../src/prodint.s \
+../src/rotF.s \
 ../src/selecteduppercase_up202007962_1MIEIC04.s 
 
 C_SRCS += \
@@ -47,12 +51,16 @@ OBJS += \
 ./src/checkabs_up202007962_1MIEIC04.o \
 ./src/conta_intervalo.o \
 ./src/conta_ocorr.o \
+./src/cosseno.o \
+./src/erfpos.o \
+./src/func.o \
 ./src/histo.o \
 ./src/nVogal.o \
 ./src/normV.o \
 ./src/ocorr.o \
 ./src/opmat_up202007962_1MIEIC04.o \
 ./src/prodint.o \
+./src/rotF.o \
 ./src/selecteduppercase_up202007962_1MIEIC04.o 
 
 C_DEPS += \
