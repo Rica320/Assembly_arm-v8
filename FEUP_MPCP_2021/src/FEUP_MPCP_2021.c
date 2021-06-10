@@ -89,7 +89,17 @@ void altV(float *P, int n, float k);
 // ex 1c) ficha 7 -papel
 
 // ex 2 - caderno
+// ex 4
 
+void incsatV(int *Z, int n, int x);
+
+// ex 5 ficha 7
+
+void mirrorSeq(float *pt, int n);
+
+// ex 7 ficha 7
+
+long int conta_inf(float *V, long int n, float lim);
 
 int main(void) {
 
@@ -374,9 +384,31 @@ int main(void) {
 	}*/
 
 
+	//ex 4 ficha 7
 
+	/*
+	int a[]= {1,3,42,3,4,6,2147483646,6};
+	incsatV(a,8, 4);
 
+	for (int i=0; i<8; i++) {
+			printf("%d, ",a[i]);
+		}*/
 
+	// ex 5 ficha 7
+
+	/*
+	float a[] = {2.0,3.5,5.6,6.5,7.4,8.9,9.9,0.0};
+	mirrorSeq(a,4);
+	for (int i=0; i<8; i++) {
+				printf("%f, ",a[i]);
+			}*/
+
+	// ex 7 ficha 7
+
+	/*
+	float a[] = {2.0,3.5,5.6,6.5,7.4,8.9,9.9,0.0};
+	long int r = conta_inf(a,8,4.0);
+	printf("%lu \n", r);*/
 
 
 
