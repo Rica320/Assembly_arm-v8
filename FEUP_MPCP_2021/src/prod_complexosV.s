@@ -1,9 +1,8 @@
 .data
-.align 3
+.align 2
 
 vaa: .float 1.0, -1.0, 1.0, -1.0
 
-.align 1
 .text
 .global prod_complexosV
 .type prod_complexosV, "function"
@@ -18,10 +17,10 @@ prod_complexosV: cbz x3, fim
 				 ldr q6, vaa
 				 fmul v5.4s, v5.4s, v6.4s
 				 faddp v3.4s, v5.4s, v4.4s
-				 smov x5, v3.s[2] //algum erro aqui
+				 smov x5, v3.s[2]
 				 ins v3.s[2], v3.s[1]
 				 mov v3.s[1], w5
-				 str d3, [x2], 8
+				 str q3, [x2], 16
 				 b prod_complexosV
 
 fim: ret
