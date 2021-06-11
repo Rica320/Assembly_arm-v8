@@ -101,6 +101,14 @@ void mirrorSeq(float *pt, int n);
 
 long int conta_inf(float *V, long int n, float lim);
 
+// ex 8 ficha 7
+
+void ajusteSIMD(float *X, float *Y, int n, float da);
+
+// ex 9 ficha 7
+
+void prod_complexosV(float *Z1, float *Z2, float *Z, long int n);
+
 int main(void) {
 
 	// Exercise/ evaluation 1
@@ -410,7 +418,26 @@ int main(void) {
 	long int r = conta_inf(a,8,4.0);
 	printf("%lu \n", r);*/
 
+	// ex 8 ficha 7
 
+	/*
+	float a[] = {1.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0};
+    float b[] = {-1.0,1.0,-1.0,1.0,-2000.125,2.0,-2.0,2.0};
+    ajusteSIMD(a,b,8,2);
+    for (int i=0; i<8; i++) {
+    				printf("%f, ",a[i]);
+    			}*/
+
+	// ex 9 ficha 7
+
+	float a[] = {1.0,2.0,1.0,1.0};
+	float b[] = {-1.0,1.0,-1.0,2.0};
+	float r[2];
+
+	prod_complexosV(a,b,r,2);
+	for (int i=0; i<4; i++) {
+	    				printf("%f, ",r[i]);
+	  	}
 
 	return EXIT_SUCCESS;
 }

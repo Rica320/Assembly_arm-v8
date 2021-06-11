@@ -1,5 +1,5 @@
 .data
-.align 3
+.align 3 // estava aqui?
 pi: .double 3.14159265359
 .text
 .global func

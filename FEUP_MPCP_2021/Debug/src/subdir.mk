@@ -15,6 +15,7 @@ S_SRCS += \
 ../src/NCHAR.s \
 ../src/SIZE_CHARS.s \
 ../src/SOMA_V.s \
+../src/ajusteSIMD.s \
 ../src/altV.s \
 ../src/calc_poly_tab.s \
 ../src/checkabs_up202007962_1MIEIC04.s \
@@ -31,6 +32,7 @@ S_SRCS += \
 ../src/normV.s \
 ../src/ocorr.s \
 ../src/opmat_up202007962_1MIEIC04.s \
+../src/prod_complexosV.s \
 ../src/prodint.s \
 ../src/rotF.s \
 ../src/selecteduppercase_up202007962_1MIEIC04.s 
@@ -51,6 +53,7 @@ OBJS += \
 ./src/NCHAR.o \
 ./src/SIZE_CHARS.o \
 ./src/SOMA_V.o \
+./src/ajusteSIMD.o \
 ./src/altV.o \
 ./src/calc_poly_tab.o \
 ./src/checkabs_up202007962_1MIEIC04.o \
@@ -67,6 +70,7 @@ OBJS += \
 ./src/normV.o \
 ./src/ocorr.o \
 ./src/opmat_up202007962_1MIEIC04.o \
+./src/prod_complexosV.o \
 ./src/prodint.o \
 ./src/rotF.o \
 ./src/selecteduppercase_up202007962_1MIEIC04.o 
