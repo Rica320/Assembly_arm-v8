@@ -109,6 +109,10 @@ void ajusteSIMD(float *X, float *Y, int n, float da);
 
 void prod_complexosV(float *Z1, float *Z2, float *Z, long int n);
 
+// exame 2019 ex 2
+
+extern  int Maxsumsubseq(unsigned  int v[],unsigned  int N);
+
 int main(void) {
 
 	// Exercise/ evaluation 1
@@ -430,6 +434,7 @@ int main(void) {
 
 	// ex 9 ficha 7
 
+	 /*
 	float a[] = {1.0,2.0,1.0,1.0};
 	float b[] = {-1.0,1.0,-1.0,2.0};
 	float r[2];
@@ -437,7 +442,11 @@ int main(void) {
 	prod_complexosV(a,b,r,2);
 	for (int i=0; i<4; i++) {
 	    				printf("%f, ",r[i]);
-	  	}
+	  	}*/
+
+	// exame 2019 ex 2
+	unsigned  int vect []={2 , 4, 6, 5, 8,9, 8, 8, 27,88,0,999};
+	 printf("%u\n", Maxsumsubseq(vect , 12));
 
 	return EXIT_SUCCESS;
 }
